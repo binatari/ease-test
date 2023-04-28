@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.linear-gradient {
+  background: linear-gradient(90deg, #060A23 0%, #07041E 25%, #07041E 75%, #060A23 100%)
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text-clips {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-bg {
+  background: linear-gradient(90.32deg, rgba(6, 7, 32, 0.1) 0%, rgba(6, 7, 32, 0.1) 100.04%);
+  backdrop-filter: blur(74px);
+}
+
+.container {
+  padding-inline: 1rem;
+}
+
+.text-transition div {
+  z-index: 1000 !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(95deg, #9EE8FA 0%, rgba(255, 255, 255, 0) 16%), linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #A088FF 0%, #A088FF 14%, #37D7FF 81%, #37D7FF 100%);
+}
+
+.rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.switching-text {
+  background: linear-gradient(95deg, #9EE8FA 0%, rgba(255, 255, 255, 0) 16%), linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #A088FF 0%, #A088FF 14%, #37D7FF 81%, #37D7FF 100%);
+}
+
+.small-header {
+  background: linear-gradient(98deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.56) 100%)
+}
+
+.description-text {
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 30%, #FFFFFF 69%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.bg-grey-gradient {
+  background: linear-gradient(180deg, #F7F9FC 90%, rgba(255, 255, 255, 0) 100%);
 }
