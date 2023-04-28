@@ -16,7 +16,7 @@ const HomeNav = () => {
             }
 
             <nav className='flex  justify-between  items-center container mx-auto py-8'>
-                <div className='max-h-[40px] flex-shrink-0 max-w-[140px]'>
+                <div className='max-h-[40px] h-10 flex-shrink-0 max-w-[140px]'>
                     <img src='/images/home.png' className='h-full' />
                 </div>
                 <ul className='md:flex space-x-16 hidden'>
@@ -70,7 +70,7 @@ const HomeNav = () => {
                     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
                     <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 linear-gradient  overflow-y-auto">
                         <div class="flex items-center mb-8">
-                            <div className='max-h-[40px] flex-shrink-0 max-w-[140px]'>
+                            <div className='max-h-[40px] h-10 flex-shrink-0 max-w-[140px]'>
                                 <img src='/images/home.png' className='h-full' />
                             </div>
                             <button class="navbar-close" onClick={() => setOpenTab(!openTab)}>
