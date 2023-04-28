@@ -4,12 +4,13 @@ import TopBanner from '../TopBanner'
 
 const HomeNav = () => {
     const [show, setShow] = useState(true)
-    const [openTab, setOpenTab] = useState(true)
+    const [openTab, setOpenTab] = useState(false)
 
 
 
     return (
-        <header className={`fixed top-0 left-0 w-full z-[100] nav-bg`}>
+        <>
+                <header className={`fixed top-0 left-0 w-full z-[100] nav-bg`}>
             {
                 show ? <TopBanner closeBanner={() => setShow(false)} /> : null
             }
@@ -60,8 +61,12 @@ const HomeNav = () => {
                     </button>
                 </div>
             </nav>
-            {
-                openTab ? <div class="navbar-menu relative z-50 md:hidden">
+         
+        </header>
+
+        
+        {
+                openTab ? <div class=" relative z-[1000] md:hidden">
                     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
                     <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 linear-gradient  overflow-y-auto">
                         <div class="flex items-center mb-8">
@@ -104,7 +109,7 @@ const HomeNav = () => {
 
                 </div> : null
             }
-        </header>
+        </>
 
     )
 }
